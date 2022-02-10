@@ -65,7 +65,7 @@ class FollowSerializer(serializers.ModelSerializer):
 
     def validate_following(self, value):
         if self.context.get('request').user == value:
-            raise serializers.ValidationError(
+            raise ValidationError(
                 'Подписка на себя невозможна!'
             )
         return value

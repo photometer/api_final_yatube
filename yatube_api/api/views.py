@@ -16,9 +16,9 @@ User = get_user_model()
 
 class PostViewSet(viewsets.ModelViewSet):
     """
-    Получение одного/всех постов любыми пользователями, 
+    Получение одного/всех постов любыми пользователями,
     добавление/обновление/удаление поста автором поста.
-    При указании параметров limit и offset выдача списка постов должна 
+    При указании параметров limit и offset выдача списка постов должна
     работать с пагинацией.
     """
     queryset = Post.objects.all()
@@ -40,7 +40,7 @@ class GroupViewSet(viewsets.ReadOnlyModelViewSet):
 
 class CommentViewSet(viewsets.ModelViewSet):
     """
-    Получение одного/всех комментариев любыми пользователями, 
+    Получение одного/всех комментариев любыми пользователями,
     добавление/обновление/удаление комментария его автором.
     """
     serializer_class = CommentSerializer
@@ -60,7 +60,7 @@ class CommentViewSet(viewsets.ModelViewSet):
 @action(methods=['get', 'post'], detail=False)
 class FollowViewSet(viewsets.ModelViewSet):
     """
-    Получение списка подписок текущего пользователя, 
+    Получение списка подписок текущего пользователя,
     добавление подписки текущего пользователя.
     Подписка на себя невозможна.
     """
