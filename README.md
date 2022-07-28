@@ -47,7 +47,7 @@ cd yatube_api
 python manage.py migrate
 ```
 
-Запустить проект:
+Запустить проект локально на ПК:
 
 ```
 python manage.py runserver
