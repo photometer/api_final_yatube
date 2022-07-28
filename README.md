@@ -15,7 +15,7 @@ API для Yatube - программный интерфейс, позволяю�
 
 ```bash
 git clone https://github.com/photometer/yatube_api
-cd api_final_yatube
+cd yatube_api
 ```
 Не забудьте создать файл ```.env``` и добавить в него ваш ```SECRET_KEY```:
 ```
